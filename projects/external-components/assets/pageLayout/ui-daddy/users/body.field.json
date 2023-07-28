@@ -84,20 +84,12 @@
             "customAttributes": {
                 "columns": [
                     {
-                        "colName": "Given Name",
+                        "colName": "Employee Name",
                         "filterType": "text",
-                        "accessor": "givenName",
+                        "accessor": "employeeName",
                         "colWidth": {
                             "unit": "px",
-                            "value": 150
-                        }
-                    },
-                    {
-                        "colName": "Family Name",
-                        "accessor": "familyName",
-                        "colWidth": {
-                            "unit": "px",
-                            "value": 150
+                            "value": 200
                         }
                     },
                     {
@@ -107,6 +99,15 @@
                         "colWidth": {
                             "unit": "px",
                             "value": 150
+                        }
+                    },
+                    {
+                        "colName": "Role",
+                        "filterType": "multiselect",
+                        "accessor": "role",
+                        "colWidth": {
+                            "unit": "px",
+                            "value": 100
                         }
                     },
                     {
@@ -137,6 +138,15 @@
                         }
                     },
                     {
+                        "colName": "Level",
+                        "filterType": "text",
+                        "accessor": "level",
+                        "colWidth": {
+                            "unit": "px",
+                            "value": 100
+                        }
+                    },
+                    {
                         "colName": "Edit User",
                         "title": "Edit User",
                         "html": "<i class='fas fa-edit'></i>",
@@ -153,6 +163,14 @@
                                             {
                                                 "varName": "tableRowData",
                                                 "staticData": "$ROW_DATA$"
+                                            },
+                                            {
+                                                "varName": "profilePath",
+                                                "responseAccessor": "$SHARED_DATA$.tableRowData.photo"
+                                            },
+                                            {
+                                                "varName": "idProofVar",
+                                                "responseAccessor": "$SHARED_DATA$.tableRowData.idProof"
                                             }
                                         ]
                                     },
@@ -200,8 +218,15 @@
                                     },
                                     {
                                         "actionType": "setfield",
-                                        "field": "$dnd-35$",
-                                        "fieldValue": "$SHARED_DATA$.tableRowData.level",
+                                        "field": "$dnd-52$",
+                                        "fieldValue": "$SHARED_DATA$.tableRowData.levelData.type",
+                                        "condition": "true",
+                                        "formName": "editUserModal"
+                                    },
+                                    {
+                                        "actionType": "setfield",
+                                        "field": "$dnd-53$",
+                                        "fieldValue": "$SHARED_DATA$.tableRowData.levelData.code",
                                         "condition": "true",
                                         "formName": "editUserModal"
                                     },
@@ -214,10 +239,23 @@
                                     },
                                     {
                                         "actionType": "setfield",
-                                        "field": "$dnd-38$",
-                                        "fieldValue": "$SHARED_DATA$.tableRowData.photo",
+                                        "field": "$dnd-63$",
+                                        "fieldValue": "$SHARED_DATA$",
                                         "condition": "true",
-                                        "formName": "editUserModal"
+                                        "formName": "editUserModal",
+                                        "fieldAccessor": {
+                                            "name": "tableRowData.photoName"
+                                        }
+                                    },
+                                    {
+                                        "actionType": "setfield",
+                                        "field": "$dnd-54$",
+                                        "fieldValue": "$SHARED_DATA$",
+                                        "condition": "true",
+                                        "formName": "editUserModal",
+                                        "fieldAccessor": {
+                                            "name": "tableRowData.idProofName"
+                                        }
                                     },
                                     {
                                         "actionType": "setfield",
@@ -389,10 +427,54 @@
         },
         {
             "baseProperties": {
-                "type": "text",
-                "id": "dnd-25",
-                "name": "roleEdit",
-                "label": "Role",
+                "type": "dropdown",
+                "id": "dnd-52",
+                "name": "levelTypeEdit",
+                "formName": "editUserModal",
+                "label": "Level Type"
+            },
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "optionList": [
+                {
+                    "value": "management",
+                    "label": "Management"
+                },
+                {
+                    "value": "division",
+                    "label": "Division"
+                },
+                {
+                    "value": "circle",
+                    "label": "Circle"
+                },
+                {
+                    "value": "zone",
+                    "label": "Zone"
+                }
+            ],
+            "optionsConfig": null,
+            "labelKey": "label",
+            "valueKey": "value",
+            "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "dropdown",
+                "id": "dnd-53",
+                "label": "Level",
+                "name": "levelEdit",
                 "formName": "editUserModal"
             },
             "layoutProperties": {
@@ -408,14 +490,78 @@
             },
             "events": [],
             "expressionProperties": {},
-            "value": null,
-            "placeholder": null
+            "optionList": null,
+            "optionsConfig": {
+                "name": "Get Levels",
+                "url": "https://upms-api.azurewebsites.net/api/v1/Levels/Get",
+                "method": "GET",
+                "pathParams": [],
+                "queryParams":  [{
+                    "paramName": "level",
+                    "mappedField": "levelTypeEdit",
+                    "mappedValue": "value"
+                }],
+                "payloadParams": [],
+                "fetch": "ONLOAD",
+                "downloadFileName": "",
+                "responseType": "",
+                "beforeSubmit": {
+                    "action": []
+                }
+            },
+            "labelKey": "name",
+            "valueKey": "code",
+            "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "dropdown",
+                "id": "dnd-25",
+                "name": "roleEdit",
+                "formName": "editUserModal",
+                "label": "Role"
+            },
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "optionList": [
+                {
+                    "value": "Admin",
+                    "label": "Admin"
+                },
+                {
+                    "value": "User",
+                    "label": "User"
+                },
+                {
+                    "value": "Vendor Admin",
+                    "label": "Vendor Admin"
+                },
+                {
+                    "value": "Vendor User",
+                    "label": "Vendor User"
+                }
+            ],
+            "optionsConfig": null,
+            "labelKey": "label",
+            "valueKey": "value",
+            "value": null
         },
         {
             "baseProperties": {
                 "type": "dropdown",
                 "id": "dnd-28",
-                "name": "companyDropdown-editModal",
+                "name": "companyEdit",
                 "formName": "editUserModal",
                 "label": "Company"
             },
@@ -458,7 +604,7 @@
                 "type": "text",
                 "id": "dnd-30",
                 "name": "givenNameEdit",
-                "label": "Given Name",
+                "label": "First Name",
                 "formName": "editUserModal"
             },
             "layoutProperties": {
@@ -485,7 +631,7 @@
                 "id": "dnd-31",
                 "name": "familyNameEdit",
                 "formName": "editUserModal",
-                "label": "Family Name"
+                "label": "Last Name"
             },
             "layoutProperties": {
                 "labelPlacement": "left",
@@ -576,6 +722,336 @@
             "expressionProperties": {},
             "value": null,
             "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "file",
+                "id": "dnd-63",
+                "name": "editProfileImage",
+                "formName": "editUserModal",
+                "label": "Profile Image"
+            },
+            "allowedExt": ".jpg,.jpeg,.png",
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "file-input-txt",
+                    "configuration": [
+                        {
+                            "selectorName": ".file-input-txt .custom-file-label",
+                            "xs": {
+                                "padding-right": "27px",
+                                "overflow": "hidden",
+                                "text-overflow": "ellipsis",
+                                "white-space": "nowrap"
+                            }
+                        }
+                    ],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "button",
+                "id": "dnd-64",
+                "name": "editProfileUpload",
+                "label": "Upload",
+                "formName": "editUserModal"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "profile-upload",
+                    "themeClass": "btn-secondary"
+                },
+                "orientation": null
+            },
+            "events": [
+                {
+                    "event": "click",
+                    "debounce": null,
+                    "actions": [
+                        {
+                            "actionType": "INVOKE_API",
+                            "url": "",
+                            "condition": "1==1",
+                            "field": "",
+                            "fieldValue": "",
+                            "messagetype": "",
+                            "messageText": "",
+                            "target": "",
+                            "timer": null,
+                            "formName": "",
+                            "componentName": "",
+                            "sharedData": [],
+                            "apiConfig": {
+                                "name": "Upload Profile Image",
+                                "url": "https://upms-api.azurewebsites.net/api/v1/file/upload?type=employee",
+                                "method": "POST",
+                                "pathParams": [],
+                                "queryParams": [],
+                                "fileUpload": true,
+                                "payloadParams": [
+                                    {
+                                        "paramName": "data",
+                                        "mappedField": "editProfileImage",
+                                        "mappedValue": "file",
+                                        "valueFormat": ""
+                                    }
+                                ],
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "beforeSubmit": {
+                                    "action": []
+                                },
+                                "onSuccess": {
+                                    "pageUrl": "",
+                                    "deleteTableRow": false,
+                                    "showSuccessMessage": true,
+                                    "sharedData": [
+                                        {
+                                            "varName": "profilePath",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "fileURL"
+                                        }
+                                    ],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Profile image uploaded successfully.",
+                                    "actions": []
+                                },
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Error occurred while uploading profile picture.",
+                                    "showErrorMessage": true,
+                                    "actions": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "expressionProperties": {
+                "disabled": "editProfileImage == null or editProfileImage == undefined"
+            }
+        },
+        {
+            "baseProperties": {
+                "type": "staticIcon",
+                "id": "dnd-71",
+                "name": "downloadProfileUpload",
+                "label": "Download",
+                "formName": "editUserModal"
+            },
+            "iconClass": "fas fa-download",
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "image-download",
+                    "themeClass": "btn-secondary",
+                    "configuration": [
+                        {
+                            "selectorName": ".image-download",
+                            "xs": {
+                                "text-align": "right",
+                                "position": "absolute",
+                                "right": "23px",
+                                "top": "-95px",
+                                "cursor": "pointer",
+                                "z-index": "10"
+                            }
+                        }
+                    ]
+                },
+                "orientation": null
+            },
+            "expressionProperties": {
+                "visible": "editProfileImage != undefined and profilePath != null and profilePath != undefined"
+            },
+            "events": [
+                {
+                    "event": "click",
+                    "actions": [
+                        {
+                            "actionType": "DOWNLOAD_FILE_URI",
+                            "fieldValue": "$SHARED_DATA$.profilePath"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "baseProperties": {
+                "type": "file",
+                "id": "dnd-54",
+                "name": "editIdProof",
+                "formName": "editUserModal",
+                "label": "Photo ID"
+            },
+            "allowedExt": "",
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "file-input-txt",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "button",
+                "id": "dnd-55",
+                "name": "editIdUpload",
+                "label": "Upload",
+                "formName": "editUserModal"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "profile-upload",
+                    "themeClass": "btn-secondary"
+                },
+                "orientation": null
+            },
+            "events": [
+                {
+                    "event": "click",
+                    "debounce": null,
+                    "actions": [
+                        {
+                            "actionType": "INVOKE_API",
+                            "url": "",
+                            "condition": "1==1",
+                            "field": "",
+                            "fieldValue": "",
+                            "messagetype": "",
+                            "messageText": "",
+                            "target": "",
+                            "timer": null,
+                            "formName": "",
+                            "componentName": "",
+                            "sharedData": [],
+                            "apiConfig": {
+                                "name": "Upload Photo ID",
+                                "url": "https://upms-api.azurewebsites.net/api/v1/file/upload?type=employee",
+                                "method": "POST",
+                                "pathParams": [],
+                                "queryParams": [],
+                                "fileUpload": true,
+                                "payloadParams": [
+                                    {
+                                        "paramName": "data",
+                                        "mappedField": "editIdProof",
+                                        "mappedValue": "file",
+                                        "valueFormat": ""
+                                    }
+                                ],
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "beforeSubmit": {
+                                    "action": []
+                                },
+                                "onSuccess": {
+                                    "pageUrl": "",
+                                    "deleteTableRow": false,
+                                    "showSuccessMessage": true,
+                                    "sharedData": [
+                                        {
+                                            "varName": "idProofVar",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "fileURL"
+                                        }
+                                    ],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Photo ID uploaded successfully.",
+                                    "actions": []
+                                },
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Error occurred while uploading profile picture.",
+                                    "showErrorMessage": true,
+                                    "actions": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "expressionProperties": {
+                "disabled": "editIdProof == null or editIdProof == undefined"
+            }
+        },
+        {
+            "baseProperties": {
+                "type": "staticIcon",
+                "id": "dnd-72",
+                "name": "downloadIdUpload",
+                "label": "Download",
+                "formName": "editUserModal"
+            },
+            "iconClass": "fas fa-download",
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "image-download",
+                    "themeClass": "btn-secondary",
+                    "configuration": []
+                },
+                "orientation": null
+            },
+            "expressionProperties": {
+                "visible": "editIdProof != null and editProfileImage != undefined and idProofVar != null and idProofVar != undefined"
+            },
+            "events": [
+                {
+                    "event": "click",
+                    "actions": [
+                        {
+                            "actionType": "DOWNLOAD_FILE_URI",
+                            "fieldValue": "$SHARED_DATA$.idProofVar"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "baseProperties": {
@@ -685,18 +1161,18 @@
                                     {
                                         "paramName": "role",
                                         "mappedField": "roleEdit",
-                                        "mappedValue": "",
+                                        "mappedValue": "value",
                                         "valueFormat": ""
                                     },
                                     {
                                         "paramName": "companyName",
-                                        "mappedField": "companyDropdown-editModal",
+                                        "mappedField": "companyEdit",
                                         "mappedValue": "label",
                                         "valueFormat": ""
                                     },
                                     {
                                         "paramName": "companyId",
-                                        "mappedField": "companyDropdown-editModal",
+                                        "mappedField": "companyEdit",
                                         "mappedValue": "value",
                                         "valueFormat": ""
                                     },
@@ -733,7 +1209,7 @@
                                     {
                                         "paramName": "level",
                                         "mappedField": "levelEdit",
-                                        "mappedValue": "",
+                                        "mappedValue": "value",
                                         "valueFormat": ""
                                     },
                                     {
@@ -765,6 +1241,18 @@
                                         "mappedField": "userIdEdit",
                                         "mappedValue": "",
                                         "valueFormat": ""
+                                    },
+                                    {
+                                        "paramName": "photo",
+                                        "mappedField": "editProfileImage",
+                                        "mappedValue": "",
+                                        "valueFormat": "$SHARED_DATA(profilePath)"
+                                    },
+                                    {
+                                        "paramName": "idProof",
+                                        "mappedField": "editIdProof",
+                                        "mappedValue": "",
+                                        "valueFormat": "$SHARED_DATA(idProofVar)"
                                     }
                                 ],
                                 "fetch": "",
@@ -779,7 +1267,10 @@
                                     "showSuccessMessage": true,
                                     "sharedData": [],
                                     "fieldData": [],
-                                    "clearSharedData": [],
+                                    "clearSharedData": [
+                                        "idProofVar",
+                                        "profilePath"
+                                    ],
                                     "apiDataAccessor": "",
                                     "message": "Vendor updated successfully.",
                                     "actions": [
@@ -868,11 +1359,11 @@
         },
         {
             "baseProperties": {
-                "type": "text",
-                "id": "dnd-14",
+                "type": "dropdown",
+                "id": "dnd-50",
+                "name": "levelTypeAdd",
                 "formName": "addUserModal",
-                "label": "Role",
-                "name": "roleAdd"
+                "label": "Level Type"
             },
             "layoutProperties": {
                 "labelPlacement": "left",
@@ -887,14 +1378,126 @@
             },
             "events": [],
             "expressionProperties": {},
-            "value": null,
-            "placeholder": null
+            "optionList": [
+                {
+                    "value": "management",
+                    "label": "Management"
+                },
+                {
+                    "value": "division",
+                    "label": "Division"
+                },
+                {
+                    "value": "circle",
+                    "label": "Circle"
+                },
+                {
+                    "value": "zone",
+                    "label": "Zone"
+                }
+            ],
+            "optionsConfig": null,
+            "labelKey": "label",
+            "valueKey": "value",
+            "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "dropdown",
+                "id": "dnd-51",
+                "label": "Level",
+                "name": "levelAdd",
+                "formName": "addUserModal"
+            },
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
+            "optionList": null,
+            "optionsConfig": {
+                "name": "Get Levels",
+                "url": "https://upms-api.azurewebsites.net/api/v1/Levels/Get",
+                "method": "GET",
+                "pathParams": [],
+                "queryParams": [{
+                    "paramName": "level",
+                    "mappedField": "levelTypeAdd",
+                    "mappedValue": "value"
+                }],
+                "payloadParams": [],
+                "fetch": "ONLOAD",
+                "downloadFileName": "",
+                "responseType": "",
+                "beforeSubmit": {
+                    "action": []
+                }
+            },
+            "labelKey": "name",
+            "valueKey": "code",
+            "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "dropdown",
+                "id": "dnd-14",
+                "name": "roleAdd",
+                "formName": "addUserModal",
+                "label": "Role"
+            },
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
+            "optionList": [
+                {
+                    "value": "Admin",
+                    "label": "Admin"
+                },
+                {
+                    "value": "User",
+                    "label": "User"
+                },
+                {
+                    "value": "Vendor Admin",
+                    "label": "Vendor Admin"
+                },
+                {
+                    "value": "Vendor User",
+                    "label": "Vendor User"
+                }
+            ],
+            "optionsConfig": null,
+            "labelKey": "label",
+            "valueKey": "value",
+            "value": null
         },
         {
             "baseProperties": {
                 "type": "dropdown",
                 "id": "dnd-48",
-                "name": "companyDropdown-addModal",
+                "name": "companyAdd",
                 "formName": "addUserModal",
                 "label": "Company"
             },
@@ -911,7 +1514,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"            
             },
             "optionList": [],
             "optionsConfig": {
@@ -938,7 +1542,7 @@
                 "id": "dnd-12",
                 "formName": "addUserModal",
                 "name": "givenNameAdd",
-                "label": "Given Name"
+                "label": "First Name"
             },
             "layoutProperties": {
                 "labelPlacement": "left",
@@ -953,7 +1557,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             },
             "value": null,
             "placeholder": null
@@ -964,7 +1569,7 @@
                 "id": "dnd-11",
                 "name": "familyNameAdd",
                 "formName": "addUserModal",
-                "label": "Family Name"
+                "label": "Last Name"
             },
             "layoutProperties": {
                 "labelPlacement": "left",
@@ -978,7 +1583,9 @@
                 "orientation": null
             },
             "events": [],
-            "expressionProperties": {},
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
             "value": null,
             "placeholder": null
         },
@@ -1003,7 +1610,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             },
             "value": null,
             "placeholder": null
@@ -1028,7 +1636,9 @@
                 "orientation": null
             },
             "events": [],
-            "expressionProperties": {},
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
             "value": null,
             "placeholder": null
         },
@@ -1053,7 +1663,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             },
             "value": null,
             "placeholder": null
@@ -1079,14 +1690,16 @@
                 "orientation": null
             },
             "events": [],
-            "expressionProperties": {},
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
             "value": null,
             "placeholder": null
         },
         {
             "baseProperties": {
                 "type": "button",
-                "id": "dnd-48",
+                "id": "dnd-49",
                 "name": "profileUpload",
                 "label": "Upload",
                 "formName": "addUserModal"
@@ -1132,7 +1745,7 @@
                             "sharedData": [],
                             "apiConfig": {
                                 "name": "Upload Profile Image",
-                                "url": "https://upms-api.azurewebsites.net/api/v1/file/upload?type=task",
+                                "url": "https://upms-api.azurewebsites.net/api/v1/file/upload?type=employee",
                                 "method": "POST",
                                 "pathParams": [],
                                 "queryParams": [],
@@ -1160,7 +1773,7 @@
                                             "varName": "profilePath",
                                             "staticData": "",
                                             "cache": false,
-                                            "responseAccessor": "$RESPONSE$"
+                                            "responseAccessor": "fileURL"
                                         }
                                     ],
                                     "fieldData": [],
@@ -1185,7 +1798,130 @@
                 }
             ],
             "expressionProperties": {
-                "disabled": "profileImage == null or profileImage == undefined"
+                "disabled": "profileImage == null or profileImage == undefined",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            }
+        },
+        {
+            "baseProperties": {
+                "type": "file",
+                "id": "dnd-60",
+                "name": "idProof",
+                "formName": "addUserModal",
+                "label": "Photo ID"
+            },
+            "allowedExt": "",
+            "layoutProperties": {
+                "labelPlacement": "left",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
+            "value": null,
+            "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "button",
+                "id": "dnd-62",
+                "name": "idUpload",
+                "label": "Upload",
+                "formName": "addUserModal"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "profile-upload",
+                    "themeClass": "btn-secondary"
+                },
+                "orientation": null
+            },
+            "events": [
+                {
+                    "event": "click",
+                    "debounce": null,
+                    "actions": [
+                        {
+                            "actionType": "INVOKE_API",
+                            "url": "",
+                            "condition": "1==1",
+                            "field": "",
+                            "fieldValue": "",
+                            "messagetype": "",
+                            "messageText": "",
+                            "target": "",
+                            "timer": null,
+                            "formName": "",
+                            "componentName": "",
+                            "sharedData": [],
+                            "apiConfig": {
+                                "name": "Upload Photo ID",
+                                "url": "https://upms-api.azurewebsites.net/api/v1/file/upload?type=employee",
+                                "method": "POST",
+                                "pathParams": [],
+                                "queryParams": [],
+                                "fileUpload": true,
+                                "payloadParams": [
+                                    {
+                                        "paramName": "data",
+                                        "mappedField": "idProof",
+                                        "mappedValue": "file",
+                                        "valueFormat": ""
+                                    }
+                                ],
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "beforeSubmit": {
+                                    "action": []
+                                },
+                                "onSuccess": {
+                                    "pageUrl": "",
+                                    "deleteTableRow": false,
+                                    "showSuccessMessage": true,
+                                    "sharedData": [
+                                        {
+                                            "varName": "idProofVar",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "fileURL"
+                                        }
+                                    ],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Photo ID uploaded successfully.",
+                                    "actions": []
+                                },
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Error occurred while uploading profile picture.",
+                                    "showErrorMessage": true,
+                                    "actions": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "expressionProperties": {
+                "disabled": "idProof == null or idProof == undefined",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             }
         },
         {
@@ -1209,7 +1945,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             },
             "value": null,
             "placeholder": null
@@ -1235,7 +1972,8 @@
             },
             "events": [],
             "expressionProperties": {
-                "requiredValue": "true"
+                "requiredValue": "true",
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
             },
             "value": null,
             "placeholder": null
@@ -1260,7 +1998,9 @@
                 "orientation": null
             },
             "events": [],
-            "expressionProperties": {},
+            "expressionProperties": {
+                "visible": "levelTypeAdd != null or levelTypeAdd != undefined"
+            },
             "value": null,
             "placeholder": null
         },
@@ -1321,18 +2061,18 @@
                                     {
                                         "paramName": "role",
                                         "mappedField": "roleAdd",
-                                        "mappedValue": "",
+                                        "mappedValue": "value",
                                         "valueFormat": ""
                                     },
                                     {
                                         "paramName": "companyName",
-                                        "mappedField": "companyDropdown-addModal",
+                                        "mappedField": "companyAdd",
                                         "mappedValue": "label",
                                         "valueFormat": ""
                                     },
                                     {
                                         "paramName": "companyId",
-                                        "mappedField": "companyDropdown-addModal",
+                                        "mappedField": "companyAdd",
                                         "mappedValue": "value",
                                         "valueFormat": ""
                                     },
@@ -1369,24 +2109,12 @@
                                     {
                                         "paramName": "level",
                                         "mappedField": "levelAdd",
-                                        "mappedValue": "",
+                                        "mappedValue": "value",
                                         "valueFormat": ""
                                     },
                                     {
                                         "paramName": "userName",
                                         "mappedField": "userNameAdd",
-                                        "mappedValue": "",
-                                        "valueFormat": ""
-                                    },
-                                    {
-                                        "paramName": "photoIdUrl",
-                                        "mappedField": "photoIdUrlAdd",
-                                        "mappedValue": "",
-                                        "valueFormat": ""
-                                    },
-                                    {
-                                        "paramName": "fileUploadUrl",
-                                        "mappedField": "fileUploadUrlAdd",
                                         "mappedValue": "",
                                         "valueFormat": ""
                                     },
@@ -1407,6 +2135,12 @@
                                         "mappedField": "profileImage",
                                         "mappedValue": "",
                                         "valueFormat": "$SHARED_DATA(profilePath)"
+                                    },
+                                    {
+                                        "paramName": "idProof",
+                                        "mappedField": "idProof",
+                                        "mappedValue": "",
+                                        "valueFormat": "$SHARED_DATA(idProofVar)"
                                     }
                                 ],
                                 "fetch": "",
@@ -1421,7 +2155,10 @@
                                     "showSuccessMessage": true,
                                     "sharedData": [],
                                     "fieldData": [],
-                                    "clearSharedData": [],
+                                    "clearSharedData": [
+                                        "profilePath",
+                                        "idProofVar"
+                                    ],
                                     "apiDataAccessor": "",
                                     "message": "User added successfully.",
                                     "actions": [
