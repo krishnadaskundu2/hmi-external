@@ -6,7 +6,7 @@
             "layout": {
                 "column": {
                     "ratio": {
-                        "lg": "6:6",
+                        "lg": "3:6:3",
                         "md": "6:6",
                         "sm": "12",
                         "xs": "12"
@@ -19,6 +19,25 @@
                 }
             },
             "sectionList": [
+                {
+                    "id": "dnd-2",
+                    "type": "content",
+                    "layout": {
+                        "column": {
+                            "ratio": {
+                                "lg": "12",
+                                "md": "12",
+                                "sm": "12",
+                                "xs": "12"
+                            }
+                        },
+                        "css": {
+                            "configuration": [],
+                            "customClassName": null
+                        }
+                    },
+                    "sectionList": []
+                },
                 {
                     "id": "dnd-1",
                     "type": "content",
@@ -33,7 +52,7 @@
                             "count": 1
                         },
                         "css": {
-                            "customClassName": "card border-secondary text-secondary",
+                            "customClassName": "card bg-secondary text-white",
                             "configuration": [],
                             "themeClass": ""
                         }
@@ -41,7 +60,7 @@
                     "sectionList": []
                 },
                 {
-                    "id": "dnd-2",
+                    "id": "dnd-7",
                     "type": "content",
                     "layout": {
                         "column": {
