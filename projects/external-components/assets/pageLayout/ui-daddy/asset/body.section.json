@@ -33,7 +33,7 @@
                             "count": 1
                         },
                         "css": {
-                            "customClassName": "card border-secondary text-secondary",
+                            "customClassName": "card bg-secondary text-white",
                             "configuration": [],
                             "themeClass": ""
                         }
