@@ -106,8 +106,8 @@
                 }
             ],
             "optionsConfig": null,
-            "labelKey": "",
-            "valueKey": null,
+            "labelKey": "label",
+            "valueKey": "value",
             "value": null
         }
     ],
