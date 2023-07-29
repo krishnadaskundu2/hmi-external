@@ -12,7 +12,7 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "user-modal-title",
+                    "customClassName": "card-title",
                     "configuration": [],
                     "themeClass": ""
                 },
