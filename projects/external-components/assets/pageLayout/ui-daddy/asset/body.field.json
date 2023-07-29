@@ -69,6 +69,46 @@
             "expressionProperties": {},
             "value": null,
             "placeholder": "Describe the asset"
+        },
+        {
+            "baseProperties": {
+                "type": "dropdown",
+                "id": "dnd-6",
+                "name": "assetType",
+                "formName": "asset",
+                "label": "Asset Type"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "optionList": [
+                {
+                    "value": "transformer",
+                    "label": "Transformer"
+                },
+                {
+                    "value": "cable",
+                    "label": "Cable"
+                },
+                {
+                    "value": "switch",
+                    "label": "Switch"
+                }
+            ],
+            "optionsConfig": null,
+            "labelKey": "",
+            "valueKey": null,
+            "value": null
         }
     ],
     "dnd-2": []
