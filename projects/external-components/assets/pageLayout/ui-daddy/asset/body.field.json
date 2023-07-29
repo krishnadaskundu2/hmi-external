@@ -110,6 +110,28 @@
             "labelKey": "label",
             "valueKey": "value",
             "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "submit",
+                "id": "dnd-8",
+                "name": "saveAsset",
+                "formName": "asset",
+                "label": "Submit"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": "btn-info"
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {}
         }
     ],
     "dnd-7": []
