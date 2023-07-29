@@ -29,11 +29,13 @@
                                 "md": "12",
                                 "sm": "12",
                                 "xs": "12"
-                            }
+                            },
+                            "count": 1
                         },
                         "css": {
+                            "customClassName": "card",
                             "configuration": [],
-                            "customClassName": null
+                            "themeClass": ""
                         }
                     },
                     "sectionList": []
