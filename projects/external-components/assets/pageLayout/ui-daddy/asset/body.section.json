@@ -52,7 +52,7 @@
                             "count": 1
                         },
                         "css": {
-                            "customClassName": "card bg-secondary text-white",
+                            "customClassName": "card border-secondary text-secondary",
                             "configuration": [],
                             "themeClass": ""
                         }
