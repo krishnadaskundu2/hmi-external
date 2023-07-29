@@ -38,7 +38,7 @@
             "placeholder": "Enter Your username",
             "accessor": "obj.email",
             "expressionProperties": {
-                "requiredValue": false,
+                "requiredValue": "true",
                 "required": "",
                 "readOnly": "",
                 "readOnlyValue": false,
@@ -70,7 +70,19 @@
                     ],
                     "debounce": 3000
                 }
-            ]
+            ],
+            "layoutProperties": {
+                "labelPlacement": "top",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "value": null
         },
         {
             "baseProperties": {
