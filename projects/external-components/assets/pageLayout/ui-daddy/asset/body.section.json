@@ -53,7 +53,14 @@
                         },
                         "css": {
                             "customClassName": "card border-secondary text-secondary",
-                            "configuration": [],
+                            "configuration": [
+                                {
+                                    "selectorName": ".center-card",
+                                    "xs": {
+                                        "margin-top": "20px"
+                                    }
+                                }
+                            ],
                             "themeClass": ""
                         }
                     },
