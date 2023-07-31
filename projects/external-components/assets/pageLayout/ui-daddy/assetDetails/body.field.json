@@ -1,5 +1,6 @@
 {
     "dnd-0": [],
+    "dnd-5": [],
     "dnd-1": [
         {
             "baseProperties": {
@@ -71,5 +72,6 @@
             "value": null,
             "placeholder": "Enter the details of your asset"
         }
-    ]
+    ],
+    "dnd-6": []
 }
