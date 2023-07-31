@@ -6,11 +6,12 @@
             "layout": {
                 "column": {
                     "ratio": {
-                        "lg": "12",
+                        "lg": "3:6:3",
                         "md": "12",
                         "sm": "12",
                         "xs": "12"
-                    }
+                    },
+                    "count": 1
                 },
                 "css": {
                     "configuration": [],
@@ -19,7 +20,47 @@
             },
             "sectionList": [
                 {
+                    "id": "dnd-5",
+                    "type": "content",
+                    "layout": {
+                        "column": {
+                            "ratio": {
+                                "lg": "12",
+                                "md": "12",
+                                "sm": "12",
+                                "xs": "12"
+                            }
+                        },
+                        "css": {
+                            "configuration": [],
+                            "customClassName": null
+                        }
+                    },
+                    "sectionList": []
+                },
+                {
                     "id": "dnd-1",
+                    "type": "content",
+                    "layout": {
+                        "column": {
+                            "ratio": {
+                                "lg": "12",
+                                "md": "12",
+                                "sm": "12",
+                                "xs": "12"
+                            },
+                            "count": 1
+                        },
+                        "css": {
+                            "customClassName": "card border-secondary text-secondary",
+                            "configuration": [],
+                            "themeClass": ""
+                        }
+                    },
+                    "sectionList": []
+                },
+                {
+                    "id": "dnd-6",
                     "type": "content",
                     "layout": {
                         "column": {
