@@ -1,0 +1,75 @@
+{
+    "dnd-0": [],
+    "dnd-1": [
+        {
+            "baseProperties": {
+                "type": "staticText",
+                "id": "dnd-2",
+                "name": "heading",
+                "formName": "details"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": "Asset Deatils"
+        },
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dnd-3",
+                "name": "assetName",
+                "formName": "details",
+                "label": "Asset Name"
+            },
+            "layoutProperties": {
+                "labelPlacement": "top",
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": "Enter the name of asset"
+        },
+        {
+            "baseProperties": {
+                "type": "textarea",
+                "id": "dnd-4",
+                "name": "description",
+                "formName": "details",
+                "label": "Description"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": "Enter the details of your asset"
+        }
+    ]
+}
