@@ -14,8 +14,9 @@
                     "count": "2"
                 },
                 "css": {
+                    "customClassName": "mt-3",
                     "configuration": [],
-                    "customClassName": null
+                    "themeClass": ""
                 }
             },
             "sectionList": [
