@@ -14,8 +14,15 @@
                     "count": "2"
                 },
                 "css": {
-                    "customClassName": "mt-3",
-                    "configuration": [],
+                    "customClassName": "mt-3 sec-margin",
+                    "configuration": [
+                        {
+                            "selectorName": ".sec-margin",
+                            "xs": {
+                                "margin-top": "20px"
+                            }
+                        }
+                    ],
                     "themeClass": ""
                 }
             },
