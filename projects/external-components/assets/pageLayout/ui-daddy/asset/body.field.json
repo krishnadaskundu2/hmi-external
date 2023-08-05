@@ -134,5 +134,15 @@
             "expressionProperties": {}
         }
     ],
-    "dnd-7": []
+    "dnd-7": [],
+    "dnd-9": [
+        {
+            "baseProperties": {
+                "type": "dynamicField",
+                "id": "dnd-10"
+            },
+            "layoutProperties": {},
+            "libraryComponent": "TableExternalComponent"
+        }
+    ]
 }
