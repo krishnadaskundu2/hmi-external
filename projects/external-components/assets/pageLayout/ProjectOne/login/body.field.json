@@ -3,10 +3,9 @@
     "dnd-1": [
         {
             "baseProperties": {
-                "type": "text",
-                "id": "dnd-2",
-                "name": "loginText",
-                "label": "Login"
+                "type": "staticText",
+                "id": "dnd-7",
+                "name": "loginText"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -21,8 +20,7 @@
             },
             "events": [],
             "expressionProperties": {},
-            "value": null,
-            "placeholder": null
+            "value": "Login"
         },
         {
             "baseProperties": {
