@@ -6,7 +6,8 @@
                 "type": "text",
                 "id": "dnd-2",
                 "name": "signin",
-                "label": "Sign in"
+                "label": "Sign in",
+                "formName": "dnd-0"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -28,7 +29,8 @@
             "baseProperties": {
                 "type": "email",
                 "id": "dnd-3",
-                "name": "email"
+                "name": "email",
+                "formName": "dnd-0"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -50,7 +52,8 @@
             "baseProperties": {
                 "type": "password",
                 "id": "dnd-4",
-                "name": "password"
+                "name": "password",
+                "formName": "dnd-0"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -73,7 +76,8 @@
                 "type": "button",
                 "id": "dnd-5",
                 "label": "Login",
-                "name": "login"
+                "name": "login",
+                "formName": "dnd-0"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -94,7 +98,8 @@
                 "type": "link",
                 "id": "dnd-6",
                 "label": "Forgot password?",
-                "name": "forgotpassword"
+                "name": "forgotpassword",
+                "formName": "dnd-0"
             },
             "layoutProperties": {
                 "labelPlacement": null,
