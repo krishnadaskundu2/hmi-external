@@ -1,1 +1,114 @@
-{}
+{
+    "dnd-0": [],
+    "dnd-1": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dnd-2",
+                "name": "loginText",
+                "label": "Login"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "email",
+                "id": "dnd-3",
+                "name": "email"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": "Enter your Email"
+        },
+        {
+            "baseProperties": {
+                "type": "password",
+                "id": "dnd-4",
+                "name": "password"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": "Password"
+        },
+        {
+            "baseProperties": {
+                "type": "button",
+                "id": "dnd-5",
+                "name": "loginButton",
+                "label": "Login"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "link",
+                "id": "dnd-6",
+                "name": "forgotPasswordLink",
+                "label": "Forgot Password ?"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {}
+        }
+    ]
+}
