@@ -44,5 +44,24 @@
             "title": "login",
             "layoutProperties": null
         }
+    },
+    "hmiAppConfiguration": {
+        "title": "demo",
+        "metaTags": [],
+        "linkTags": [],
+        "ifPageNotFound": "",
+        "interceptorConfigurations": [],
+        "apiConfigurations": [],
+        "layoutProperties": {
+            "labelPlacement": "top",
+            "width": null,
+            "height": null,
+            "css": {
+                "customClassName": "",
+                "configuration": [],
+                "themeClass": ""
+            },
+            "orientation": null
+        }
     }
 }
