@@ -12,8 +12,23 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "",
-                    "configuration": [],
+                    "customClassName": "element-child",
+                    "configuration": [
+                        {
+                            "selectorName": ".element-child",
+                            "xs": {
+                                "margin-bottom": "35px",
+                                "font-size": "30px"
+                            }
+                        },
+                        {
+                            "selectorName": ".element-child .dynamic-style-child",
+                            "xs": {
+                                "text-align": "center",
+                                "color": "white"
+                            }
+                        }
+                    ],
                     "themeClass": ""
                 },
                 "orientation": null
