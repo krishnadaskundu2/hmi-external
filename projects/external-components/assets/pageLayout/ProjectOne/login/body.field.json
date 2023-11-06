@@ -12,7 +12,7 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "",
+                    "customClassName": "element-child",
                     "configuration": [
                         {
                             "selectorName": ".element-child",
