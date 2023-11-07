@@ -1,1 +1,54 @@
-{}
+{
+    "dnd-0": [],
+    "dnd-1": [
+        {
+            "baseProperties": {
+                "type": "staticText",
+                "id": "dnd-2",
+                "name": "L"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null
+        },
+        {
+            "baseProperties": {
+                "type": "email",
+                "id": "dnd-3"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "password",
+                "id": "dnd-4"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "button",
+                "id": "dnd-5"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "link",
+                "id": "dnd-6"
+            },
+            "layoutProperties": {}
+        }
+    ]
+}
