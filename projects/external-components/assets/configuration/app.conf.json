@@ -46,7 +46,7 @@
         }
     },
     "hmiAppConfiguration": {
-        "title": "demo",
+        "title": "",
         "metaTags": [],
         "linkTags": [],
         "ifPageNotFound": "",
