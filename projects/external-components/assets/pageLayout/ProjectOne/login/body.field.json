@@ -12,8 +12,23 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "",
-                    "configuration": [],
+                    "customClassName": "element-child",
+                    "configuration": [
+                        {
+                            "selectorName": ".element-child",
+                            "xs": {
+                                "margin-bottom": "35px",
+                                "font-size": "30px"
+                            }
+                        },
+                        {
+                            "selectorName": ".element-child .dynamic-style-child",
+                            "xs": {
+                                "text-align": "center",
+                                "color": "white"
+                            }
+                        }
+                    ],
                     "themeClass": ""
                 },
                 "orientation": null
@@ -78,8 +93,21 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "",
-                    "configuration": [],
+                    "customClassName": "login__btn",
+                    "configuration": [
+                        {
+                            "selectorName": ".login__btn",
+                            "xs": {
+                                "margin-top": "20px"
+                            }
+                        },
+                        {
+                            "selectorName": ".login__btn .dynamic-style-child",
+                            "xs": {
+                                "width": "100%"
+                            }
+                        }
+                    ],
                     "themeClass": ""
                 },
                 "orientation": null
@@ -99,8 +127,16 @@
                 "width": null,
                 "height": null,
                 "css": {
-                    "customClassName": "",
-                    "configuration": [],
+                    "customClassName": "login__forgot-link",
+                    "configuration": [
+                        {
+                            "selectorName": "login__forgot-link",
+                            "xs": {
+                                "margin": "10px",
+                                "justify-content": "center"
+                            }
+                        }
+                    ],
                     "themeClass": ""
                 },
                 "orientation": null
