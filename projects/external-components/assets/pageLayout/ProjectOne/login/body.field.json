@@ -76,7 +76,13 @@
                 },
                 "orientation": null
             },
-            "events": [],
+            "events": [
+                {
+                    "event": "",
+                    "debounce": null,
+                    "actions": []
+                }
+            ],
             "expressionProperties": {},
             "value": null,
             "placeholder": "Password"
@@ -140,7 +146,7 @@
                                 "queryParams": [],
                                 "payloadParams": [
                                     {
-                                        "paramName": "userName",
+                                        "paramName": "email",
                                         "mappedField": "email",
                                         "mappedValue": "",
                                         "valueFormat": ""
@@ -152,9 +158,16 @@
                                         "valueFormat": ""
                                     }
                                 ],
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "beforeSubmit": {
+                                    "action": []
+                                },
                                 "onSuccess": {
+                                    "pageUrl": "/dashboard",
+                                    "deleteTableRow": false,
                                     "showSuccessMessage": true,
-                                    "message": "Sucessfully loged in",
                                     "sharedData": [
                                         {
                                             "varName": "firstName",
@@ -169,16 +182,22 @@
                                             "responseAccessor": "lastName"
                                         }
                                     ],
-                                    "pageUrl": "/dashboard"
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Sucessfully loged in",
+                                    "actions": []
                                 },
-                                "onError": {},
-                                "beforeSubmit": {
-                                    "action": []
-                                },
-                                "downloadFileName": "",
-                                "responseType": "",
-                                "encodePathAndQueryParams": false,
-                                "isWithCredentials": false
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "",
+                                    "showErrorMessage": false,
+                                    "actions": []
+                                }
                             }
                         }
                     ]
