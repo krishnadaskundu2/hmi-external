@@ -112,7 +112,78 @@
                 },
                 "orientation": null
             },
-            "events": [],
+            "events": [
+                {
+                    "event": "click",
+                    "debounce": null,
+                    "actions": [
+                        {
+                            "actionType": "INVOKE_API",
+                            "url": "",
+                            "condition": "1==1",
+                            "fileName": "",
+                            "field": "",
+                            "fieldValue": "",
+                            "fieldAccessor": "",
+                            "messagetype": "",
+                            "messageText": "",
+                            "target": "",
+                            "timer": null,
+                            "formName": "",
+                            "componentName": "",
+                            "sharedData": [],
+                            "apiConfig": {
+                                "name": "login",
+                                "url": "https://uidaddy.free.beeceptor.com/login",
+                                "method": "POST",
+                                "pathParams": [],
+                                "queryParams": [],
+                                "payloadParams": [
+                                    {
+                                        "paramName": "userName",
+                                        "mappedField": "email",
+                                        "mappedValue": "",
+                                        "valueFormat": ""
+                                    },
+                                    {
+                                        "paramName": "password",
+                                        "mappedField": "password",
+                                        "mappedValue": "",
+                                        "valueFormat": ""
+                                    }
+                                ],
+                                "onSuccess": {
+                                    "showSuccessMessage": true,
+                                    "message": "Sucessfully loged in",
+                                    "sharedData": [
+                                        {
+                                            "varName": "firstName",
+                                            "staticData": "",
+                                            "cache": true,
+                                            "responseAccessor": "firstName"
+                                        },
+                                        {
+                                            "varName": "lastName",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "lastName"
+                                        }
+                                    ],
+                                    "pageUrl": "/dashboard"
+                                },
+                                "onError": {},
+                                "beforeSubmit": {
+                                    "action": []
+                                },
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "encodePathAndQueryParams": false,
+                                "isWithCredentials": false
+                            }
+                        }
+                    ]
+                }
+            ],
             "expressionProperties": {}
         },
         {
