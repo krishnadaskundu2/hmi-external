@@ -180,6 +180,12 @@
                                             "staticData": "",
                                             "cache": false,
                                             "responseAccessor": "lastName"
+                                        },
+                                        {
+                                            "varName": "authenticated",
+                                            "staticData": "yes",
+                                            "cache": false,
+                                            "responseAccessor": ""
                                         }
                                     ],
                                     "fieldData": [],
@@ -197,8 +203,7 @@
                                     "message": "",
                                     "showErrorMessage": false,
                                     "actions": []
-                                },
-                                "isWithCredentials": false
+                                }
                             }
                         }
                     ]
