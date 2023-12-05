@@ -178,13 +178,13 @@
                                         {
                                             "varName": "lastName",
                                             "staticData": "",
-                                            "cache": false,
+                                            "cache": true,
                                             "responseAccessor": "lastName"
                                         },
                                         {
                                             "varName": "authenticated",
                                             "staticData": "yes",
-                                            "cache": false,
+                                            "cache": true,
                                             "responseAccessor": ""
                                         }
                                     ],
