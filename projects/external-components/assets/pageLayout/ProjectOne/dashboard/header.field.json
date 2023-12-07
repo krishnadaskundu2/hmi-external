@@ -19,7 +19,11 @@
             },
             "events": [],
             "expressionProperties": {},
-            "value": "Welcome {0} {1}"
+            "value": "Welcome {0} {1}",
+            "dynamicValueAccessor": [
+                "firstName",
+                "lastName"
+            ]
         }
     ]
 }
