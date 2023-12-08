@@ -52,40 +52,7 @@
         "linkTags": [],
         "ifPageNotFound": "",
         "interceptorConfigurations": [],
-        "apiConfigurations": [
-            {
-                "name": "API Name",
-                "url": "https://uidaddy.free.beeceptor.com/dashboard",
-                "method": "GET",
-                "pathParams": [],
-                "queryParams": [],
-                "payloadParams": [
-                    {
-                        "paramName": "favorite_color",
-                        "mappedField": "favorite_color",
-                        "mappedValue": "",
-                        "valueFormat": ""
-                    }
-                ],
-                "onSuccess": {
-                    "fieldData": [
-                        {
-                            "id": "",
-                            "responseAccessor": "",
-                            "staticValue": ""
-                        }
-                    ]
-                },
-                "onError": {},
-                "beforeSubmit": {
-                    "action": []
-                },
-                "downloadFileName": "",
-                "responseType": "",
-                "encodePathAndQueryParams": false,
-                "isWithCredentials": false
-            }
-        ],
+        "apiConfigurations": [],
         "layoutProperties": {
             "labelPlacement": "top",
             "width": null,
