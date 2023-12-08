@@ -41,7 +41,7 @@
             "baseProperties": {
                 "type": "email",
                 "id": "dnd-3",
-                "name": "email"
+                "name": "email2"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -147,7 +147,7 @@
                                 "payloadParams": [
                                     {
                                         "paramName": "email",
-                                        "mappedField": "email",
+                                        "mappedField": "email2",
                                         "mappedValue": "",
                                         "valueFormat": ""
                                     },
@@ -203,8 +203,7 @@
                                     "message": "",
                                     "showErrorMessage": false,
                                     "actions": []
-                                },
-                                "isWithCredentials": false
+                                }
                             }
                         }
                     ]
