@@ -1,1 +1,26 @@
-{}
+{
+    "dnd-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dnd-1",
+                "name": "text"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        }
+    ]
+}
