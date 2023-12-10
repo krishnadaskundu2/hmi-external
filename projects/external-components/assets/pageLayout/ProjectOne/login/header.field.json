@@ -21,6 +21,13 @@
             "expressionProperties": {},
             "value": null,
             "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "password",
+                "id": "dnd-2"
+            },
+            "layoutProperties": {}
         }
     ]
 }
