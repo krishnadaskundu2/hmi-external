@@ -4,7 +4,7 @@
             "baseProperties": {
                 "type": "text",
                 "id": "dnd-1",
-                "name": "text"
+                "name": "text2"
             },
             "layoutProperties": {
                 "labelPlacement": null,
