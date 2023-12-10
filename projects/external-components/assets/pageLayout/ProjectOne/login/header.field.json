@@ -1,31 +1,9 @@
 {
-    "dnd-0": [
+    "Hdnd-3": [
         {
             "baseProperties": {
                 "type": "text",
-                "id": "dnd-1",
-                "name": "text2"
-            },
-            "layoutProperties": {
-                "labelPlacement": null,
-                "width": null,
-                "height": null,
-                "css": {
-                    "customClassName": "",
-                    "configuration": [],
-                    "themeClass": ""
-                },
-                "orientation": null
-            },
-            "events": [],
-            "expressionProperties": {},
-            "value": null,
-            "placeholder": null
-        },
-        {
-            "baseProperties": {
-                "type": "password",
-                "id": "dnd-2"
+                "id": "Hdnd-4"
             },
             "layoutProperties": {}
         }
