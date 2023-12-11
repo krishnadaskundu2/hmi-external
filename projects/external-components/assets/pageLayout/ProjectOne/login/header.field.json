@@ -31,7 +31,14 @@
         {
             "baseProperties": {
                 "type": "text",
-                "id": "Hdnd-2"
+                "id": "Hdnd-5"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "Hdnd-6"
             },
             "layoutProperties": {}
         }
