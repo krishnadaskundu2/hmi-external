@@ -1,0 +1,28 @@
+{
+    "dn-0": [],
+    "dn-1": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dn-2"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "url",
+                "id": "dn-3"
+            },
+            "layoutProperties": {}
+        }
+    ],
+    "dn-4": [
+        {
+            "baseProperties": {
+                "type": "email",
+                "id": "dn-5"
+            },
+            "layoutProperties": {}
+        }
+    ]
+}
