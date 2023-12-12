@@ -1,1 +1,11 @@
-{}
+{
+    "dh-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dh-1"
+            },
+            "layoutProperties": {}
+        }
+    ]
+}
