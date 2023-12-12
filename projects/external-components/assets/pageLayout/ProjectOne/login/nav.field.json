@@ -20,9 +20,24 @@
         {
             "baseProperties": {
                 "type": "tel",
-                "id": "dn-5"
+                "id": "dn-5",
+                "name": "phone"
             },
-            "layoutProperties": {}
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
         }
     ]
 }
