@@ -1,1 +1,28 @@
-{}
+{
+    "dn-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dn-1"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "tel",
+                "id": "dn-2"
+            },
+            "layoutProperties": {}
+        }
+    ],
+    "dn-3": [],
+    "dn-4": [
+        {
+            "baseProperties": {
+                "type": "tel",
+                "id": "dn-5"
+            },
+            "layoutProperties": {}
+        }
+    ]
+}
