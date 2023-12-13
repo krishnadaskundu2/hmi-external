@@ -1,43 +1,11 @@
 {
-    "dn-0": [],
-    "dn-1": [
-        {
-            "baseProperties": {
-                "type": "text",
-                "id": "dn-2"
-            },
-            "layoutProperties": {}
-        },
-        {
-            "baseProperties": {
-                "type": "url",
-                "id": "dn-3"
-            },
-            "layoutProperties": {}
-        }
-    ],
-    "dn-4": [
+    "dn-0": [
         {
             "baseProperties": {
                 "type": "email",
-                "id": "dn-5",
-                "name": "email"
+                "id": "dn-1"
             },
-            "layoutProperties": {
-                "labelPlacement": null,
-                "width": null,
-                "height": null,
-                "css": {
-                    "customClassName": "",
-                    "configuration": [],
-                    "themeClass": ""
-                },
-                "orientation": null
-            },
-            "events": [],
-            "expressionProperties": {},
-            "value": null,
-            "placeholder": null
+            "layoutProperties": {}
         }
     ]
 }
