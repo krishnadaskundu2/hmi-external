@@ -1,1 +1,36 @@
-{}
+{
+    "df-0": [],
+    "df-1": [
+        {
+            "baseProperties": {
+                "type": "tel",
+                "id": "df-2",
+                "name": "mob"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        }
+    ],
+    "df-3": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "df-4"
+            },
+            "layoutProperties": {}
+        }
+    ]
+}
