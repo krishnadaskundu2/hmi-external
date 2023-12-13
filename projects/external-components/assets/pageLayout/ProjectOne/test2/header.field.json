@@ -1,1 +1,43 @@
-{}
+{
+    "dh-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dh-1"
+            },
+            "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "tel",
+                "id": "dh-2"
+            },
+            "layoutProperties": {}
+        }
+    ],
+    "dh-3": [],
+    "dh-4": [
+        {
+            "baseProperties": {
+                "type": "number",
+                "id": "dh-5",
+                "name": "num"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null
+        }
+    ]
+}
