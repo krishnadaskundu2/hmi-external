@@ -31,6 +31,14 @@
                 "id": "df-4"
             },
             "layoutProperties": {}
+        },
+        {
+            "baseProperties": {
+                "type": "password",
+                "id": "df-5"
+            },
+            "layoutProperties": {}
         }
-    ]
+    ],
+    "df-6": []
 }
