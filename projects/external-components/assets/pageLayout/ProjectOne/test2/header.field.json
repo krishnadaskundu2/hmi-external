@@ -38,6 +38,22 @@
             "expressionProperties": {},
             "value": null,
             "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "dh-6"
+            },
+            "layoutProperties": {}
+        }
+    ],
+    "dh-7": [
+        {
+            "baseProperties": {
+                "type": "email",
+                "id": "dh-8"
+            },
+            "layoutProperties": {}
         }
     ]
 }
