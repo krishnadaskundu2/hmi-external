@@ -1,0 +1,28 @@
+{
+    "db-0": [
+        {
+            "baseProperties": {
+                "type": "staticText",
+                "id": "db-1",
+                "name": "name"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": "{0}",
+            "dynamicValueAccessor": [
+                "name"
+            ]
+        }
+    ]
+}
