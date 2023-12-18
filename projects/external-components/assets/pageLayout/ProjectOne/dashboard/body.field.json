@@ -4,7 +4,7 @@
             "baseProperties": {
                 "type": "staticText",
                 "id": "db-1",
-                "name": "name"
+                "name": "Uname"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -22,6 +22,30 @@
             "value": "{0}",
             "dynamicValueAccessor": [
                 "name"
+            ]
+        },
+        {
+            "baseProperties": {
+                "type": "staticText",
+                "id": "db-2",
+                "name": "age"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": "{0}",
+            "dynamicValueAccessor": [
+                "age"
             ]
         }
     ]
