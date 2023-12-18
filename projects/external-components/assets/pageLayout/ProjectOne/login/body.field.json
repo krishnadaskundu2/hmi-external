@@ -158,18 +158,40 @@
                                         "valueFormat": ""
                                     }
                                 ],
-                                "onSuccess": {
-                                    "showSuccessMessage": false,
-                                    "sharedData": []
-                                },
-                                "onError": {},
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
                                 "beforeSubmit": {
                                     "action": []
                                 },
-                                "downloadFileName": "",
-                                "responseType": "",
-                                "encodePathAndQueryParams": false,
-                                "isWithCredentials": true
+                                "onSuccess": {
+                                    "pageUrl": "/dashboard",
+                                    "deleteTableRow": false,
+                                    "showSuccessMessage": true,
+                                    "sharedData": [
+                                        {
+                                            "varName": "name",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "firstName"
+                                        }
+                                    ],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "Sucessfully loged in",
+                                    "actions": []
+                                },
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "",
+                                    "showErrorMessage": false,
+                                    "actions": []
+                                }
                             }
                         }
                     ]
