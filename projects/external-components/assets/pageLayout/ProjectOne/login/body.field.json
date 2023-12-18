@@ -197,7 +197,8 @@
                                     "message": "",
                                     "showErrorMessage": false,
                                     "actions": []
-                                }
+                                },
+                                "isWithCredentials": false
                             }
                         }
                     ]
