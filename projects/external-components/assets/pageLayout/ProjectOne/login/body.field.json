@@ -41,7 +41,7 @@
             "baseProperties": {
                 "type": "email",
                 "id": "dnd-3",
-                "name": "email2"
+                "name": "email"
             },
             "layoutProperties": {
                 "labelPlacement": null,
