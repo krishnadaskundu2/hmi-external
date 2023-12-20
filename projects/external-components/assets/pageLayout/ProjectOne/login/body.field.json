@@ -165,10 +165,23 @@
                                     "action": []
                                 },
                                 "onSuccess": {
-                                    "pageUrl": "",
+                                    "pageUrl": "/profile",
                                     "deleteTableRow": false,
                                     "showSuccessMessage": false,
-                                    "sharedData": [],
+                                    "sharedData": [
+                                        {
+                                            "varName": "firstName",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "firstName"
+                                        },
+                                        {
+                                            "varName": "lastName",
+                                            "staticData": "",
+                                            "cache": false,
+                                            "responseAccessor": "lastName"
+                                        }
+                                    ],
                                     "fieldData": [],
                                     "clearSharedData": [],
                                     "apiDataAccessor": "",
@@ -185,7 +198,7 @@
                                     "showErrorMessage": false,
                                     "actions": []
                                 },
-                                "isWithCredentials": true
+                                "isWithCredentials": false
                             }
                         }
                     ]
