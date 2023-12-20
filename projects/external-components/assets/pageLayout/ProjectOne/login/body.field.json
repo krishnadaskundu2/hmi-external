@@ -165,23 +165,10 @@
                                     "action": []
                                 },
                                 "onSuccess": {
-                                    "pageUrl": "/dashboard",
+                                    "pageUrl": "",
                                     "deleteTableRow": false,
-                                    "showSuccessMessage": true,
-                                    "sharedData": [
-                                        {
-                                            "varName": "name",
-                                            "staticData": "",
-                                            "cache": false,
-                                            "responseAccessor": "firstName"
-                                        },
-                                        {
-                                            "varName": "userAge",
-                                            "staticData": "",
-                                            "cache": false,
-                                            "responseAccessor": "age"
-                                        }
-                                    ],
+                                    "showSuccessMessage": false,
+                                    "sharedData": [],
                                     "fieldData": [],
                                     "clearSharedData": [],
                                     "apiDataAccessor": "",
@@ -198,7 +185,7 @@
                                     "showErrorMessage": false,
                                     "actions": []
                                 },
-                                "isWithCredentials": false
+                                "isWithCredentials": true
                             }
                         }
                     ]
