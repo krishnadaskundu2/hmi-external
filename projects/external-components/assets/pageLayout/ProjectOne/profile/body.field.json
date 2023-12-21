@@ -4,7 +4,8 @@
             "baseProperties": {
                 "type": "text",
                 "id": "db-1",
-                "name": "firstName"
+                "name": "firstName",
+                "label": "First Name"
             },
             "layoutProperties": {
                 "labelPlacement": null,
