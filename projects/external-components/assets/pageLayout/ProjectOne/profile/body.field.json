@@ -1,1 +1,25 @@
-{}
+{
+    "db-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "db-1"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": "firstName",
+            "placeholder": null
+        }
+    ]
+}
