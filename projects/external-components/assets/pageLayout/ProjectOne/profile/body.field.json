@@ -3,7 +3,8 @@
         {
             "baseProperties": {
                 "type": "text",
-                "id": "db-1"
+                "id": "db-1",
+                "name": "firstName"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -18,7 +19,7 @@
             },
             "events": [],
             "expressionProperties": {},
-            "value": "firstName",
+            "value": "",
             "placeholder": null
         }
     ]
