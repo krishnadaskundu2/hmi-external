@@ -30,7 +30,7 @@
                             "fileName": "",
                             "field": "",
                             "fieldValue": "firstName",
-                            "fieldAccessor": "firstName",
+                            "fieldAccessor": "$SHARED_DATA$.firstName",
                             "messagetype": "",
                             "messageText": "",
                             "target": "",
@@ -38,30 +38,6 @@
                             "formName": "",
                             "componentName": "",
                             "sharedData": [],
-                            "apiConfig": null
-                        },
-                        {
-                            "actionType": "SET_SHARED_DATA",
-                            "url": "",
-                            "condition": "1==1",
-                            "fileName": "",
-                            "field": "",
-                            "fieldValue": "",
-                            "fieldAccessor": "",
-                            "messagetype": "",
-                            "messageText": "",
-                            "target": "",
-                            "timer": null,
-                            "formName": "",
-                            "componentName": "",
-                            "sharedData": [
-                                {
-                                    "varName": "firstName",
-                                    "staticData": "",
-                                    "cache": false,
-                                    "responseAccessor": "firstName"
-                                }
-                            ],
                             "apiConfig": null
                         }
                     ]
