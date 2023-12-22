@@ -29,7 +29,7 @@
                             "condition": "1==1",
                             "fileName": "",
                             "field": "",
-                            "fieldValue": "",
+                            "fieldValue": "firstName",
                             "fieldAccessor": "firstName",
                             "messagetype": "",
                             "messageText": "",
@@ -38,6 +38,30 @@
                             "formName": "",
                             "componentName": "",
                             "sharedData": [],
+                            "apiConfig": null
+                        },
+                        {
+                            "actionType": "SET_SHARED_DATA",
+                            "url": "",
+                            "condition": "1==1",
+                            "fileName": "",
+                            "field": "",
+                            "fieldValue": "",
+                            "fieldAccessor": "",
+                            "messagetype": "",
+                            "messageText": "",
+                            "target": "",
+                            "timer": null,
+                            "formName": "",
+                            "componentName": "",
+                            "sharedData": [
+                                {
+                                    "varName": "firstName",
+                                    "staticData": "",
+                                    "cache": false,
+                                    "responseAccessor": "firstName"
+                                }
+                            ],
                             "apiConfig": null
                         }
                     ]
