@@ -46,6 +46,29 @@
             "expressionProperties": {},
             "accessor": "dashboard.favorite_color",
             "value": null,
-            "placeholder": null        }
+            "placeholder": null
+        },
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "db-2"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null,
+            "accessor": "dashboard.favorite_food"
+        }
     ]
 }
