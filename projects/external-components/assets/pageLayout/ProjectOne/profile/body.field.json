@@ -45,7 +45,8 @@
             ],
             "expressionProperties": {},
             "value": "dashboard",
-            "placeholder": null
+            "placeholder": null,
+            "accessor": "dashboard.content_value",
         }
     ]
 }
