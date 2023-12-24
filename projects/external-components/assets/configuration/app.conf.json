@@ -91,7 +91,7 @@
             "localURL": "./assets/pageLayout/ProjectOne/profile/footer.section.json"
         },
         "data": {
-            "fetchFromLocal": true,
+            "fetchFromLocal": false,
             "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
              "serverURL": [
             {
