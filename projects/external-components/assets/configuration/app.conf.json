@@ -120,7 +120,7 @@
                 "encodePathAndQueryParams": false,
                 "isWithCredentials": false
             }
-        ],
+        ]
         },
         "navField": {
             "fetchFromLocal": true,
