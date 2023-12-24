@@ -95,7 +95,7 @@
             "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
              "serverURL": [
             {
-                "name": "API Name",
+                "name": "dashboard",
                 "url": "https://uidaddy.free.beeceptor.com/dashboard",
                 "method": "GET",
                 "pathParams": [],
