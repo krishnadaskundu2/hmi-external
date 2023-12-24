@@ -92,7 +92,7 @@
         },
         "data": {
             "fetchFromLocal": true,
-            "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json"
+            "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
              "serverURL": [
             {
                 "name": "API Name",
