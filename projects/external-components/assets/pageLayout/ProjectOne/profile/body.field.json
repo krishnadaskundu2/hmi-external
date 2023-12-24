@@ -44,7 +44,8 @@
                 }
             ],
             "expressionProperties": {},
-            "value": "$SHARED_DATA$.firstName",
+            "fieldValue": "$SHARED_DATA$.firstName",
+            "value": null,
             "placeholder": null        }
     ]
 }
