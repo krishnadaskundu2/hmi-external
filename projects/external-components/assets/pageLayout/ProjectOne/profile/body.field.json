@@ -45,7 +45,6 @@
             ],
             "expressionProperties": {},
             "value": "$SHARED_DATA$.firstName",
-            "accessor": "dashboard.content_value",
             "placeholder": null        }
     ]
 }
