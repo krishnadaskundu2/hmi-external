@@ -20,7 +20,7 @@
             },
             "events": [
                 {
-                    "event": "click",
+                    "event": "load",
                     "debounce": null,
                     "actions": [
                         {
