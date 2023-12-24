@@ -93,6 +93,34 @@
         "data": {
             "fetchFromLocal": true,
             "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json"
+             "apiConfigurations": [
+            {
+                "name": "API Name",
+                "url": "https://uidaddy.free.beeceptor.com/dashboard",
+                "method": "GET",
+                "pathParams": [],
+                "queryParams": [],
+                "payloadParams": [],
+                "onSuccess": {
+                    "sharedData": [
+                        {
+                            "varName": "firstName",
+                            "staticData": "",
+                            "cache": false,
+                            "responseAccessor": "favorite_color"
+                        }
+                    ]
+                },
+                "onError": {},
+                "beforeSubmit": {
+                    "action": []
+                },
+                "downloadFileName": "",
+                "responseType": "",
+                "encodePathAndQueryParams": false,
+                "isWithCredentials": false
+            }
+        ],
         },
         "navField": {
             "fetchFromLocal": true,
