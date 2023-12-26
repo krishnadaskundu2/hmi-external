@@ -142,7 +142,13 @@
         },
         "globalPageSettings": {
             "title": "profile",
-            "layoutProperties": null
+            "layoutProperties": {
+                "css": {
+                    "customClassName": "test",
+                    "configuration": [],
+                    "themeClass": ""
+                }
+            }
         }
     }
 }
