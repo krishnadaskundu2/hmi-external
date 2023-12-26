@@ -42,7 +42,13 @@
         },
         "globalPageSettings": {
             "title": "login",
-            "layoutProperties": null
+            "layoutProperties": {
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                }
+            }
         }
     },
     "hmiAppConfiguration": {
@@ -93,34 +99,34 @@
         "data": {
             "fetchFromLocal": false,
             "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
-             "serverURL": [
-            {
-                "name": "dashboard",
-                "url": "https://uidaddy.free.beeceptor.com/dashboard",
-                "method": "GET",
-                "pathParams": [],
-                "queryParams": [],
-                "payloadParams": [],
-                "onSuccess": {
-                    "sharedData": [
-                        {
-                            "varName": "firstName",
-                            "staticData": "",
-                            "cache": false,
-                            "responseAccessor": "favorite_color"
-                        }
-                    ]
-                },
-                "onError": {},
-                "beforeSubmit": {
-                    "action": []
-                },
-                "downloadFileName": "",
-                "responseType": "",
-                "encodePathAndQueryParams": false,
-                "isWithCredentials": false
-            }
-        ]
+            "serverURL": [
+                {
+                    "name": "dashboard",
+                    "url": "https://uidaddy.free.beeceptor.com/dashboard",
+                    "method": "GET",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {
+                        "sharedData": [
+                            {
+                                "varName": "firstName",
+                                "staticData": "",
+                                "cache": false,
+                                "responseAccessor": "favorite_color"
+                            }
+                        ]
+                    },
+                    "onError": {},
+                    "beforeSubmit": {
+                        "action": []
+                    },
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "encodePathAndQueryParams": false,
+                    "isWithCredentials": false
+                }
+            ]
         },
         "navField": {
             "fetchFromLocal": true,
