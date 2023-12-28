@@ -58,7 +58,25 @@
         "linkTags": [],
         "ifPageNotFound": "",
         "interceptorConfigurations": [],
-        "apiConfigurations": [],
+        "apiConfigurations": [
+            {
+                "name": "API Name",
+                "url": "https://uidaddy.free.beeceptor.com/dashboard",
+                "method": "POST",
+                "pathParams": [],
+                "queryParams": [],
+                "payloadParams": [],
+                "onSuccess": {},
+                "onError": {},
+                "beforeSubmit": {
+                    "action": []
+                },
+                "downloadFileName": "",
+                "responseType": "",
+                "encodePathAndQueryParams": false,
+                "isWithCredentials": true
+            }
+        ],
         "layoutProperties": {
             "labelPlacement": "top",
             "width": null,
