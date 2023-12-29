@@ -141,6 +141,23 @@
                         "showErrorMessage": false,
                         "actions": []
                     }
+                },
+                {
+                    "name": "API Name",
+                    "url": "https://uidaddy.free.beeceptor.com/login",
+                    "method": "POST",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {},
+                    "onError": {},
+                    "beforeSubmit": {
+                        "action": []
+                    },
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "encodePathAndQueryParams": false,
+                    "isWithCredentials": true
                 }
             ]
         },
@@ -160,7 +177,7 @@
             "title": "profile",
             "layoutProperties": {
                 "css": {
-                    "customClassName": "test",
+                    "customClassName": "",
                     "configuration": [],
                     "themeClass": ""
                 }
