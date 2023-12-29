@@ -107,7 +107,16 @@
                     "pathParams": [],
                     "queryParams": [],
                     "payloadParams": [],
+                    "fetch": "",
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "beforeSubmit": {
+                        "action": []
+                    },
                     "onSuccess": {
+                        "pageUrl": "",
+                        "deleteTableRow": false,
+                        "showSuccessMessage": false,
                         "sharedData": [
                             {
                                 "varName": "firstName",
@@ -115,8 +124,32 @@
                                 "cache": false,
                                 "responseAccessor": "favorite_color"
                             }
-                        ]
+                        ],
+                        "fieldData": [],
+                        "clearSharedData": [],
+                        "apiDataAccessor": "",
+                        "message": "",
+                        "actions": []
                     },
+                    "onError": {
+                        "pageUrl": "",
+                        "sharedData": [],
+                        "fieldData": [],
+                        "clearSharedData": [],
+                        "apiDataAccessor": "",
+                        "message": "",
+                        "showErrorMessage": false,
+                        "actions": []
+                    }
+                },
+                {
+                    "name": "API Name",
+                    "url": "https://uidaddy.free.beeceptor.com/login",
+                    "method": "POST",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {},
                     "onError": {},
                     "beforeSubmit": {
                         "action": []
@@ -124,7 +157,7 @@
                     "downloadFileName": "",
                     "responseType": "",
                     "encodePathAndQueryParams": false,
-                    "isWithCredentials": false
+                    "isWithCredentials": true
                 }
             ]
         },
