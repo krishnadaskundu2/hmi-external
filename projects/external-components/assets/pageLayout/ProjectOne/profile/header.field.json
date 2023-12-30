@@ -1,0 +1,29 @@
+{
+    "dh-0": [
+        {
+            "baseProperties": {
+                "type": "staticText",
+                "id": "dh-1",
+                "name": "greeting"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": "Welcome {0} {1}",
+            "dynamicValueAccessor": [
+                "firstName",
+                "lastName"
+            ]
+        }
+    ]
+}
