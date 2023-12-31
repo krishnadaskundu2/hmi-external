@@ -98,8 +98,27 @@
             "localURL": "./assets/pageLayout/ProjectOne/profile/footer.section.json"
         },
         "data": {
-            "fetchFromLocal": true,
-            "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json"
+            "fetchFromLocal": false,
+            "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
+            "serverURL": [
+                {
+                    "name": "dashboard",
+                    "url": "https://uidaddy.free.beeceptor.com/dashboard",
+                    "method": "GET",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {},
+                    "onError": {},
+                    "beforeSubmit": {
+                        "action": []
+                    },
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "encodePathAndQueryParams": false,
+                    "isWithCredentials": false
+                }
+            ]
         },
         "navField": {
             "fetchFromLocal": true,
@@ -115,7 +134,13 @@
         },
         "globalPageSettings": {
             "title": "profile",
-            "layoutProperties": null
+            "layoutProperties": {
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                }
+            }
         }
     }
 }
