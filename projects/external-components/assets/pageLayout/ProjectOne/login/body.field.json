@@ -159,8 +159,16 @@
                                         "valueFormat": ""
                                     }
                                 ],
+                                "fetch": "",
+                                "downloadFileName": "",
+                                "responseType": "",
+                                "beforeSubmit": {
+                                    "action": []
+                                },
                                 "onSuccess": {
                                     "pageUrl": "/profile",
+                                    "deleteTableRow": false,
+                                    "showSuccessMessage": false,
                                     "sharedData": [
                                         {
                                             "varName": "firstName",
@@ -174,15 +182,23 @@
                                             "cache": false,
                                             "responseAccessor": "lastName"
                                         }
-                                    ]
+                                    ],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "",
+                                    "actions": []
                                 },
-                                "onError": {},
-                                "beforeSubmit": {
-                                    "action": []
+                                "onError": {
+                                    "pageUrl": "",
+                                    "sharedData": [],
+                                    "fieldData": [],
+                                    "clearSharedData": [],
+                                    "apiDataAccessor": "",
+                                    "message": "",
+                                    "showErrorMessage": false,
+                                    "actions": []
                                 },
-                                "downloadFileName": "",
-                                "responseType": "",
-                                "encodePathAndQueryParams": false,
                                 "isWithCredentials": false
                             }
                         }
