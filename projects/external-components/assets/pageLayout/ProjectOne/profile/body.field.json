@@ -4,8 +4,8 @@
             "baseProperties": {
                 "type": "text",
                 "id": "db-1",
-                "label": "fav food",
-                "name": "favFood"
+                "name": "favFood",
+                "label": "Favorite Food"
             },
             "layoutProperties": {
                 "labelPlacement": null,
@@ -22,7 +22,31 @@
             "expressionProperties": {},
             "value": null,
             "placeholder": null,
-            "accessor": "dashboard.favorite_food"
+            "accessor": "Profile.fav_food"
+        },
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "db-2",
+                "name": "favColor",
+                "label": "Favorite Colour"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null,
+            "accessor": "Profile.fav_color"
         }
     ]
 }
