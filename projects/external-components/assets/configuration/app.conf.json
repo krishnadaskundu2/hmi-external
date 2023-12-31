@@ -25,7 +25,7 @@
             "localURL": "./assets/pageLayout/ProjectOne/login/footer.section.json"
         },
         "data": {
-            "fetchFromLocal": false,
+            "fetchFromLocal": true,
             "localURL": "./assets/pageLayout/ProjectOne/login/body.data.json",
             "serverURL": []
         },
