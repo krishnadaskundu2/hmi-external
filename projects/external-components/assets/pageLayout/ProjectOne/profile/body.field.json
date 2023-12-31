@@ -1,1 +1,28 @@
-{}
+{
+    "db-0": [
+        {
+            "baseProperties": {
+                "type": "text",
+                "id": "db-1",
+                "label": "fav food",
+                "name": "favFood"
+            },
+            "layoutProperties": {
+                "labelPlacement": null,
+                "width": null,
+                "height": null,
+                "css": {
+                    "customClassName": "",
+                    "configuration": [],
+                    "themeClass": ""
+                },
+                "orientation": null
+            },
+            "events": [],
+            "expressionProperties": {},
+            "value": null,
+            "placeholder": null,
+            "accessor": "dashboard.favorite_food"
+        }
+    ]
+}
