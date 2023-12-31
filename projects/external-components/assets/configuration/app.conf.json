@@ -100,7 +100,25 @@
         "data": {
             "fetchFromLocal": false,
             "localURL": "./assets/pageLayout/ProjectOne/profile/body.data.json",
-            "serverURL": []
+            "serverURL": [
+                {
+                    "name": "Profile",
+                    "url": "https://uidaddy.free.beeceptor.com/profile",
+                    "method": "GET",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {},
+                    "onError": {},
+                    "beforeSubmit": {
+                        "action": []
+                    },
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "encodePathAndQueryParams": false,
+                    "isWithCredentials": true
+                }
+            ]
         },
         "navField": {
             "fetchFromLocal": true,
