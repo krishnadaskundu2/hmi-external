@@ -25,9 +25,27 @@
             "localURL": "./assets/pageLayout/ProjectOne/login/footer.section.json"
         },
         "data": {
-            "fetchFromLocal": true,
+            "fetchFromLocal": false,
             "localURL": "./assets/pageLayout/ProjectOne/login/body.data.json",
-            "serverURL": []
+            "serverURL": [
+                {
+                    "name": "API Name",
+                    "url": "",
+                    "method": "",
+                    "pathParams": [],
+                    "queryParams": [],
+                    "payloadParams": [],
+                    "onSuccess": {},
+                    "onError": {},
+                    "beforeSubmit": {
+                        "action": []
+                    },
+                    "downloadFileName": "",
+                    "responseType": "",
+                    "encodePathAndQueryParams": false,
+                    "isWithCredentials": true
+                }
+            ]
         },
         "navField": {
             "fetchFromLocal": true,
